@@ -48,6 +48,9 @@ b- Sua automação deve clicar em todos os botões edit e delete da grid apresen
 - Deletar Cadastro metodo DELETE incluindo validação pelo Status - 200 - 
 
 ## Autor
+Sei que não era um requisito, porém inclui o teste CI/CD no github action, e verificando está OK o funcionamento.
+
+## Autor
 Peterson de Lima Luz
 
 ## Considerações Finais
