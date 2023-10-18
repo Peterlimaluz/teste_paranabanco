@@ -34,7 +34,7 @@ jobs:
 
       - name: Run Testes
         run: |
-          robot -d ./testes -v HEADLESS:true \
+          robot -d /testes -v HEADLESS:true \
           -v BROWSER:${{ matrix.browser }} tests
 
       - name: Upload Tests Results
