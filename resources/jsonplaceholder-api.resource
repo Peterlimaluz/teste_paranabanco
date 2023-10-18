@@ -24,7 +24,7 @@ Dado que abri o navegador
     # Armazena os testes em formato de imagem
     ...            tracing=${OUTPUT_DIR}/evidencies/traces/api/${NOW}/${TRACE_NAME}.zip
     # Armazena os testes em formato de video
-    ...            recordVideo={'dir':'C:/Users/Peter/OneDrive/Documentos/Projetos/Teste_paranaBanco/evidencies/videos/api/${NOW}'}
+    # ...            recordVideo={'dir':'C:/Users/Peter/OneDrive/Documentos/Projetos/Teste_paranaBanco/evidencies/videos/api/${NOW}'}
 
 E acessei o site jsonplaceholder
     [Documentation]    Criei o processo para chamar a variável que contém o endereço do site e acessar a partir de uma nova página

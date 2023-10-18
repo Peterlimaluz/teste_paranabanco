@@ -24,7 +24,7 @@ Dado que abri o navegador
     # Armazena os testes em formato de imagem
     ...            tracing=${OUTPUT_DIR}/evidencies/traces/front/${NOW}/${TRACE_NAME}.zip
     # Armazena os testes em formato de video
-    ...            recordVideo={'dir':'C:/Users/Peter/OneDrive/Documentos/Projetos/Teste_paranaBanco/evidencies/videos/front/${NOW}'}
+    # ...            recordVideo={'dir':'C:/Users/Peter/OneDrive/Documentos/Projetos/Teste_paranaBanco/evidencies/videos/front/${NOW}'}
 
 E acessei o site The Internet Front
     [Documentation]     Criei o processo para chamar a variavel que contém o endereço do site e acessar a partir de uma nova página
