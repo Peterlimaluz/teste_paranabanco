@@ -32,7 +32,7 @@ jobs:
           sudo npx playwright install-deps
           rfbrowser init
 
-      - name: Run RF WEB Tests
+      - name: Run Testes
         run: |
           robot -d ./testes -v HEADLESS:true \
           -v BROWSER:${{ matrix.browser }} tests
@@ -50,12 +50,12 @@ jobs:
         if: always()
         uses: actions/download-artifact@v1
         with:
-          name: results-${{ matrix.browser }}
+          name: testes-${{ matrix.browser }}
 
       - name: Send Report
         if: always()
         uses: joonvena/robotframework-reporter-action@v2.1
         with:
-          report_path: results-${{ matrix.browser }}
+          report_path: testes-${{ matrix.browser }}
           gh_access_token: ${{ secrets.GITHUB_TOKEN }}
           show_passed_tests: false
