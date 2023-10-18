@@ -34,7 +34,7 @@ jobs:
 
       - name: Run Testes
         run: |
-          robot -d /testes -v HEADLESS:true \
+          robot -d ./tests -v HEADLESS:true \
           -v BROWSER:${{ matrix.browser }} testes
 
       - name: Upload Tests Results
@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: testes-${{ matrix.browser }}
-          path: ./testes
+          path: ./tests
           if-no-files-found: ignore
           retention-days: 2
 
@@ -56,6 +56,6 @@ jobs:
         if: always()
         uses: joonvena/robotframework-reporter-action@v2.1
         with:
-          report_path: testes-${{ matrix.browser }}
+          report_path: tests-${{ matrix.browser }}
           gh_access_token: ${{ secrets.GITHUB_TOKEN }}
           show_passed_tests: false
