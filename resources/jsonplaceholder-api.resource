@@ -8,7 +8,7 @@ Library    JSONLibrary
 ${BROWSER}            chromium
 ${HEADLESS}           ${true}
 ${url_jsonPlaceholder}    https://jsonplaceholder.typicode.com/users/
-${schema}             ${OUTPUT_DIR}/schema/schema.json
+${schema}             ./schema/schema.json
 
 *** Keywords ***
 Dado que abri o navegador
