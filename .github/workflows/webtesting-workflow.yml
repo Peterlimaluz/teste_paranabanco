@@ -35,7 +35,7 @@ jobs:
       - name: Run Testes
         run: |
           robot -d /testes -v HEADLESS:true \
-          -v BROWSER:${{ matrix.browser }} tests
+          -v BROWSER:${{ matrix.browser }} testes
 
       - name: Upload Tests Results
         if: always()
